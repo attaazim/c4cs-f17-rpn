@@ -4,6 +4,7 @@ python:
 notifications:
   email: never
 before_script:
+  - pip install coverage
   - pip install termcolor
 script: 
   - coverage run --source setup.py test
