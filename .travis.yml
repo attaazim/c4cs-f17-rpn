@@ -7,5 +7,5 @@ before_script:
   - pip install coverage
   - pip install termcolor
 script: 
-  - python test_rpn.py
+  - coverage run test_rpn.py
 after_success: coveralls
