@@ -29,11 +29,18 @@ def calculate(myarg):
         raise TypeError("Too many parameters")
     return stack.pop()
 
+def dummy_func():
+    dummy_number = 2
+    dummy_string = "here is a dummy number: " + str(dummy_number)
+    print(dummy_string)
+
 def main():
     while True:
         result = calculate(input("rpn calc> "))
         print_string = "Result: " + str(result)
         cprint(print_string, "red")
+
+    dummy_func()
 
 if __name__ == '__main__':
     main()
